@@ -1,0 +1,866 @@
+*{
+margin: 0;  
+padding: 0; 
+}
+
+
+body{
+background-color: black;
+}
+
+ .main{
+height:80vh;
+background-image:linear-gradient(to right, rgba(5, 5, 5, 0.788) , rgba(134, 134, 119, 0.377),rgba(5, 5, 5, 0.589)),url("../../images/qq.jpg");  
+position: relative;
+background-position: center center;
+background-repeat: no-repeat;
+min-width:1000px;
+}
+
+
+
+.box{
+    opacity: 0.44;
+    background-color: rgb(10, 10, 10);
+    width:100vw;
+    height:100vh;
+    position: absolute; 
+    top: 0;
+    min-width:1000px;
+} 
+
+ img{
+height:80px;
+position: relative;
+z-index: 10; 
+}
+
+header{
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+width:55%;
+margin:0% 0% 0% 20%;
+}
+
+ 
+@media all and (max-width:1280px) {
+    header{
+      width:86%;
+     margin:0% 0% 0% 2%; 
+     
+    }
+
+} 
+
+ 
+
+
+
+
+ 
+
+select,option{
+
+padding:10px 20px 5px 35px;
+background-color:transparent;
+color:white;
+border-radius:6px 6px 6px 6px;
+border:-1px solid black;
+font-size:16px;
+position: relative;
+z-index:20;
+
+}
+
+option{
+color: black;
+
+}
+
+
+
+.singinbutton{
+
+    padding:8px 15px 6px 15px;
+    color:white;
+    border-radius:6px 6px 6px 6px;
+    border:0;
+    font-size:17px;
+    position: relative;
+    z-index:20;
+    background-color:red;
+    position: absolute;
+    right:-100px;
+    cursor: pointer;
+
+}
+
+.upperbutton{
+position: relative;
+}
+
+.textcontain{
+color: white;
+position: relative;
+z-index:30;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100%;
+
+}
+
+.fristparagraf{
+font-family: "Archivo Black", sans-serif;
+font-weight: 900;
+font-style: normal;
+font-size:48px;
+line-height:70px;
+}
+
+.secodeparagraf{
+ font-family: "M PLUS Rounded 1c", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      font-size: 26px;
+       line-height:60px;
+}
+
+.thereparagraf{
+font-family: "M PLUS Rounded 1c", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size:20px;
+line-height: 50px;
+}
+
+.input{
+width: 100%;
+height:20vh;
+position: relative;
+
+}
+
+.textbutton{
+position: absolute;
+left:35%;
+padding:20px 158px 22px 15px;
+background-color:rgba(23 , 23 , 23 , 0.6);
+color: rgb(240, 234, 234);
+border-radius:6px 6px 6px 6px;
+font-size: 15px;
+border: 1px solid rgb(104, 100, 100);
+position: relative;
+z-index: 50;
+font-weight: 700;
+}
+
+.starbutton{
+    position: absolute;
+    left:55%;
+    padding:20px 15px 12px 23px;
+    background-color:red;
+    color: white;
+    border-radius:6px 6px 6px 6px;
+    font-size:23px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#arros{
+ color:white;
+ margin:5px 5px 5px 8px;
+}
+
+
+
+
+.borderline{
+ width: 100vw;
+ height:1%;  
+ background-color:rgb(37, 37, 37); 
+}
+
+.maincontainer{ 
+background-color:black;
+width:100vw;
+height:100vh;
+box-sizing: border-box;
+} 
+
+body{
+ overflow-x: hidden;   
+}
+
+.textofsecode{
+color: white;
+margin:3% 2% 4% 5%;
+}
+ 
+.secoderow{
+display: flex;
+justify-content: space-around;
+justify-content: center;
+align-items: center;
+background-color:black;
+width:100vw;
+height:58%;
+}
+
+.paragrafone{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size:48px;
+    line-height:90px;
+}
+
+.paragraftwo{
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  font-size: 26px;
+   
+}
+
+.paragrafthree{
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  font-size: 26px;
+   
+}
+
+.tvimage{
+width: 570px;
+height: 450px;
+} 
+
+.videoparented{
+position: relative;
+}
+
+.chilevideo{
+position: absolute; 
+bottom:90px;   
+right: 25px;
+}
+
+
+.thridborder{
+    width: 100vw;
+    height:1%;  
+    background-color:rgb(37, 37, 37); 
+}
+
+.thridrow{
+
+
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+    width:100vw;
+    height:62%;
+
+}
+
+
+.paragrafthridone{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size:48px;
+    line-height:90px;
+}
+
+.paragrafthridtwo{
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  font-size: 26px;
+   
+}
+
+.paragrafthridthree{
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  font-size: 26px;
+   
+}
+
+
+.thridtext{
+    color: white;
+    margin:3% 2% 4% 40%;
+    }
+
+    .stragerthingimage{
+        width: 570px;
+        height: 450px;
+        position: absolute;
+        right:700px;
+        bottom:-230px;
+    }
+
+    .thridimages{
+     position: relative;
+    }
+
+    .smallerbar{
+        width:10px;
+        height:10px;
+        background-color: rgb(8, 8, 8);
+        border: 1px solid rgb(139, 141, 140);
+        padding:95px 310px 15px 15px;
+        border-radius:15px 15px 15px 15px;
+        position:absolute;
+        right:820px;
+        top:90px;
+        z-index:60;
+        
+    }
+
+.shrotimgaes {
+position: absolute;
+right:78%;
+top: 10%; 
+} 
+
+.Download{
+position: absolute;
+left:95px;
+bottom:40px;
+}
+
+.thing{
+  color: white;  
+  font-size: 20px;
+}
+
+.uplode{
+   text-decoration: none; 
+   color: rgb(98, 98, 238);
+}
+
+
+
+.fourborder{
+    width: 100vw;
+    height:1%;  
+    background-color:rgb(37, 37, 37); 
+}
+
+
+
+.fourcontainer{
+
+
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+    width:100vw;
+    height:58%;
+
+}
+
+.textoffour{
+color: white;
+margin:3% 2% 4% 5%;
+}
+
+.paragraffourone{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size:48px;
+    line-height:70px;
+}
+
+.paragraffourtwo{
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  font-size: 26px;
+   line-height:60px;
+
+}
+
+.paragraffourthree{
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:20px;
+    line-height:10px;
+
+}
+
+
+.dilawiimages{
+    width: 600px;
+    height: 500px;
+}
+
+.fourvideo{
+position: absolute; 
+bottom:90px;   
+right:120px;
+width:360px;
+height:500px;
+}
+
+.imagefourall{
+position: relative;
+
+}
+
+
+
+.fiveclass{
+    width: 100vw;
+    height:1%;  
+    background-color:rgb(37, 37, 37); 
+
+}
+
+.fiverow{
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+    width:100vw;
+    height:62%;
+}
+
+.fivetext{
+    color: white;
+    margin:3% 2% 4% 40%;
+
+}
+
+.paragraffiveone{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size:48px;
+    line-height:90px;
+}
+
+
+.paragraffivetwo{
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  font-size: 26px;
+   
+}
+
+.paragraffivethree{
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  font-size: 26px;
+   
+}
+
+.fiveimages{
+ position: relative;   
+}
+
+.cartoonthingimage{
+    width: 570px;
+    height: 450px;
+    position: absolute;
+    right:700px;
+    bottom:-230px;
+}
+
+.sixborders{
+    width: 100vw;
+    height:1%;  
+    background-color:rgb(37, 37, 37); 
+}
+
+.sixrow{
+    background-color:black;
+    width:100vw;
+    height:97vh;
+position: relative;
+z-index:65;
+}
+
+.sixfrists{
+    width:100vw;
+    height:15%;
+    color: white;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size:48px;
+    line-height:90px;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    cursor: pointer;
+}
+
+
+.sixtwo{
+    
+    width: 100vw;
+    height:58%;
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sixonetwo:hover{
+background-color: grey;
+}
+
+.sixtwotwo:hover{
+    background-color: grey;
+    }
+ 
+.sixthreetwo:hover{
+ background-color: grey;
+}
+           
+.sixfourtwo:hover{
+ background-color: grey;
+}
+  
+.sixfivetwo:hover{
+background-color: grey;
+}
+    
+.sixsixtwo:hover{
+background-color: grey;
+}
+    
+
+
+.sixonetwo{
+background-color:rgb(46, 46, 46);
+width:60%;
+height:22%;
+display: flex;
+align-items: center;
+font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  font-size: 26px;
+  color: white;
+  transition: all 1s ease-out;
+  cursor: pointer;
+}
+
+.WhatisNetflix{
+width:95%;
+display: flex;
+justify-content:space-between;
+align-items: center;
+margin: auto;
+}
+
+.sixtwotwo{
+    background-color:rgb(46, 46, 46);
+    width:60%;
+    height:22%;
+    display: flex;
+    align-items: center;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      font-size: 26px;
+      color: white;
+      margin-top:8px;
+      transition: all 1s ease-out;
+      cursor: pointer;
+}
+
+.Netflixcost{
+    
+    width:95%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.sixthreetwo{
+    background-color:rgb(46, 46, 46);
+    width:60%;
+    height:22%;
+    display: flex;
+    align-items: center;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      font-size: 26px;
+      color: white;
+      margin-top:8px;
+      transition: all 1s ease-out;
+      cursor: pointer;
+}
+
+.watch{
+    
+    width:95%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.sixfourtwo{
+    background-color:rgb(46, 46, 46);
+    width:60%;
+    height:22%;
+    display: flex;
+    align-items: center;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      font-size: 26px;
+      color: white;
+      margin-top:8px;
+      transition: all 1s ease-out;
+      cursor: pointer;
+}
+
+.cancel{
+    
+    width:95%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: auto;  
+}
+
+.sixfivetwo{
+    background-color:rgb(46, 46, 46);
+    width:60%;
+    height:22%;
+    display: flex;
+    align-items: center;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      font-size: 26px;
+      color: white;
+      margin-top:8px;
+      transition: all 1s ease-out;
+      cursor: pointer;
+}
+
+.choose{
+    
+    width:95%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: auto;  
+}
+
+.sixsixtwo{
+    background-color:rgb(46, 46, 46);
+    width:60%;
+    height:22%;
+    display: flex;
+    align-items: center;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight:400;
+    font-style: normal;
+    font-size: 26px;
+    color: white;
+    margin-top:8px;
+    transition: all 1s ease-out;
+    cursor: pointer;
+}
+
+
+.kids{
+    
+    width:95%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: auto;  
+}
+
+
+.plusimageone{
+width:50px;
+height:50px;
+}
+
+.plusimagetwo{
+ width:50px;
+ height:50px;
+ }
+.plusimagethree{
+width:50px;
+height:50px;
+}
+     
+.plusimagefour{
+width:50px;
+height:50px;
+}
+  
+.plusimagefive{
+width:50px;
+height:50px;
+}
+      
+.plusimagesix{
+width:50px;
+height:50px;
+}
+                 
+
+.lastparagraf{
+background-color: blue;
+width:20%;
+height:20%;
+color: white;
+
+}
+
+.membership{
+color: white;
+font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  font-size: 20px;
+
+}
+
+.sixthree{
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100vw;
+    height:25%
+}
+
+.lastbutton{
+    display: flex;
+    align-items:center;
+    justify-content:flex-end;
+    justify-content: space-around;
+   width: 30%;
+   height:39%;
+
+}
+
+.lastEmailbutton{
+
+    padding:20px 158px 22px 15px;
+    background-color:rgba(23 , 23 , 23 , 0.6);
+    color: rgb(240, 234, 234);
+    border-radius:6px 6px 6px 6px;
+    font-size: 15px;
+    border: 1px solid rgb(104, 100, 100);
+    position: relative;
+    z-index: 50;
+    font-weight: 700;
+
+}
+
+.lastStarted{
+
+    padding:20px 15px 12px 23px;
+    background-color:red;
+    color: white;
+    border-radius:6px 6px 6px 6px;
+    font-size:23px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.sevenborder{
+    width: 100vw;
+    height:1%;  
+    background-color:rgb(37, 37, 37);
+    position: relative; 
+    z-index:70;
+    
+
+}
+
+footer{
+ background-color: black;
+ color: rgb(206, 199, 199);    
+ width:100vw;
+ height:40%;
+}
+
+.allgrid{
+display: grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+margin:5px 400px 20px 400px;
+}
+ 
+.fristgrid{
+display:flex;
+flex-direction:column;
+gap:20px;
+
+}
+
+.secodegrid{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    }
+
+.threegrid{
+ display:flex;
+ flex-direction: column;
+ gap: 20px;
+}
+
+.fourgrid{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    }
+
+.offooter{
+padding:3% 5% 1% 20%;
+}
+
+.fristgrid a{
+    color: rgb(206, 199, 199);
+    cursor: pointer;
+}
+
+.secodegrid a{
+    color: rgb(206, 199, 199);
+    cursor: pointer;
+}
+
+.threegrid a{
+    color: rgb(206, 199, 199);
+    cursor: pointer;
+}
+
+.fourgrid a{
+    color: rgb(206, 199, 199);
+    cursor: pointer;
+}

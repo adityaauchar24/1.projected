@@ -1,0 +1,110 @@
+*{
+ margin: 0;
+ padding: 0;  
+ box-sizing: border-box; 
+}
+
+.five{
+width:100vw;
+height:100vh;
+
+}
+
+
+
+
+
+
+.twoss{
+
+background-image:linear-gradient(rgba(20, 19, 19,0.5), rgb(7, 6, 6,0.5)),url("https://media.istockphoto.com/id/1651134339/photo/taj-mahal-white-marble-mausoleum-landmark-in-agra-uttar-pradesh-india-beautiful-ancient-tomb.jpg?s=1024x1024&w=is&k=20&c=arLS_xUDSeKTUMYaMCgXM3UUeq9uDselqRf4ngqW9C8=");
+
+background-repeat: no-repeat;
+background-size: 100vw 100vh;
+width: 100%;
+height: 100vh;
+
+}
+
+nav{
+width:100%;
+height:15vh;
+color: white;  
+display: flex;
+justify-content:space-between;
+align-items: center;
+text-transform:uppercase;
+font-size:150%;
+
+} 
+
+ nav .one{
+ width: 20%; text-align: center;  font-size:150%;
+}
+
+ nav .two{
+    width: 35%; text-align: center;  
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.two a{
+
+ text-decoration: none;  
+ color: white;
+
+}
+
+
+    
+    
+     *{
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing:auto;
+      font-weight:bold;
+      font-style:normal;
+    
+
+}
+
+main{
+width:100%;
+height:85%;
+display:flex;
+align-items:center;
+justify-content: center;
+text-align: center;
+color: white;
+
+}
+
+ section h3{
+
+font-size:240%; letter-spacing:3px; font-weight:500; 
+text-shadow: 1px 1px 2px black;
+
+}
+
+
+section h1{
+
+    font-size:400%; letter-spacing:3px; font-weight:500; height: 90px;
+    text-shadow: 1px 1px 2px black;
+    
+    }
+
+    section p{
+
+        font-size:140%; letter-spacing:3px; font-weight:500; 
+        text-shadow: 1px 1px 2px black;
+        
+        }
+
+section a{
+
+   width: 20%;
+
+}
+
+

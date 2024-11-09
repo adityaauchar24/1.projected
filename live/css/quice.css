@@ -1,0 +1,119 @@
+
+
+*{ 
+    font-family: "Poppins", sans-serif;
+    margin: 0; padding: 0;
+    outline:none; border: none;
+    transition: all .2s ease-out; 
+    text-decoration: none;
+    
+    }
+
+    html{
+        font-size: 62.5%;
+        overflow-x: hidden;
+        scroll-padding-top: 7rem;
+        scroll-behavior: smooth;
+        }
+        
+        .quiz-container{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80rem;
+            margin-top:4%;
+            flex: 1, 1, 50%;
+        }
+
+#quiz{
+    background-color: rgb(237, 240, 243);
+    min-width: 69rem;
+    min-height: 65rem;
+    border-radius: 8%;
+    flex: 1, 1, 50%;
+}
+
+  h1{
+font-size:3rem;
+max-width: 80rem;
+min-height:10rem;
+display: flex;
+align-items: center;
+flex: 1, 1, 50%;
+}
+
+
+
+li , .fristpart{
+    min-height:6rem;
+    max-width: 25rem;
+    margin-bottom: 1%;
+    font-size:small;
+    margin: 4% 1% 3% 5%;
+    display: flex;
+    align-items: center;
+    flex: 1, 1, 50%;
+    border-radius: 45% 45% 45% 45%;
+}
+
+ul{
+
+margin: 2%  0%  -2%  5%;
+  
+}
+
+
+li , label{
+margin: 1%  -45% 1% 9%;
+flex: 1, 1, 50%;
+font-size:17px;
+}
+
+
+h1{
+flex: 1 , 1 ,50rem;
+padding:5% 7% 4% 11%;
+margin: 3% 3% 0% 3%;
+}
+
+
+button ,.submit {
+background-color: blue;
+margin: 14% 1%  1% 80%;
+padding: 2% 4% 2% 4%;
+min-height:1rem;
+font-size:small;
+border-radius: 45% 45% 45% 45%;
+color: aliceblue;
+flex: 1, 1, 50%;
+}
+
+.btn{
+min-width: 77rem;
+min-height: 7rem;
+display: flex;
+align-items: center;
+flex: 1, 1, 50%;
+}
+
+
+input , .answer{
+margin-left: 2%;  
+flex: 1, 1, 50%;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+
+.quiz-container{
+     
+width: 991px;
+flex: 1, 1, 50%;
+    }
+
+  }
+
+  
