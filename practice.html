@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+*{
+    margin: 0; padding: 0;
+    text-decoration: none;
+    outline: none; border: none;
+    transition: all .2s ease-out;
+     text-transform:capitalize;
+}
+
+
+html{
+font-size: 62.5%;
+overflow-x: hidden;
+scroll-padding-top: 7rem;
+scroll-behavior: smooth;
+} 
+
+
+
+header{
+    padding: 2rem 10%;
+    background-color:#fff;
+    position: relative;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0 , 0 , .1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .logo i{
+    color: #248f24cc;
+    text-transform: capitalize;
+}
+
+header .logo {
+text-transform: capitalize;
+font-family:"Poppins", sans-serif; ;
+font-size: 1.8rem;
+padding:0.1rem;
+
+}
+
+nav a{
+text-transform: capitalize;
+font-family:"Poppins", sans-serif; ;
+color:#8b8787f7;
+padding: 2rem;
+}
+
+#lastlogo{
+    display: none;
+}
+
+
+</style>
+
+</head>
+
+<body> 
+
+
+<header>
+  <div class="logo"> <i class="fas fa-heartbeat"></i> mediacen</div>  
+
+<nav>
+<a href="#" class="box1">home</a>
+<a href="#" class="box2">addd</a>
+<a href="#" class="box3">jjjj</a>
+<a href="#" class="box4">dddd</a>
+<a href="#" id="box5">ggggg</a>
+
+</nav>
+
+<div class="fas fa-bars" id="lastlogo"></div>
+
+</header>
+
+<script>
+
+
+
+
+
+
+
+
+
+// var array =["a" ,"b" , "c" , "d"];
+
+// for(let i=0; i<array.length; i++){
+
+// var output = array[i];
+// console.log(output);
+
+// }
+
+// document.write("<br/>");
+
+// for(let i=0; i<3; i++){
+// console.log(output);
+// console.log(1);
+// }
+
+// document.write("<br/>");
+
+
+
+// var d=[2,3,5,4];
+
+
+// for(let i=0; i<d.length; i++){
+
+// var output=d[i];
+// console.log(output);
+
+// }
+
+
+// document.write("<br/>");
+
+// var j=[2,3,6,4];
+
+// j.forEach(element => {
+    
+// console.log(element);
+// console.log("aditya");
+
+// });
+
+// document.write("<br/>");
+
+
+
+
+//  (v , m) =>{
+// console.log("adityta7");
+//  return (v+m)
+
+// }
+
+// console.log(4,5);
+
+
+
+
+
+
+// const aditya =() =>{
+
+// console.log("auchat3");
+
+// }
+
+
+
+// document.querySelector("#box5").addEventListener("click", aditya);
+
+
+// document.querySelector(".box2").addEventListener("click", function ee(){console.log("yyyyyyyyy")} );
+
+
+
+
+// // i)return function alway target or selected or choose the function name or adi frist alway and it will return allthing frist to function name or adi and already have or exited and set or give all return value to function name or adi like
+
+// // input:
+
+// function adi(num1 ,num2){
+
+// return num1 + num2 ;
+
+// }
+
+// adi(2,4);
+
+// // output:
+
+// 6
+
+// // ii)
+
+// // input:
+
+// function adit (num1 ,num2){
+
+// return 4 + num2 ;
+
+// }
+
+// adi(2,4);
+
+// output:
+
+// 8
+
+
+
+// // iii)there are four type to write the return 
+
+
+// // 1)return alway return the all value of return to function name 
+
+// // input:
+
+// function a() ={
+
+// return "aditya"
+
+// }
+
+// document.write(a());
+
+// // output :
+
+// aditya 
+
+
+// // 2)
+
+// // input:
+
+// function a(){
+
+  
+//   return "aditya";
+  
+//   }
+  
+//   document.write(a());
+  
+// //   output :
+  
+//   aditya 
+
+
+
+//   let welcome = name => weeee , rrr ;
+
+// welcome();
+
+
+
+// // iii) new and short way to write the function it callde arrow function or fat arrow or fat arrow function and in arrow function or fat function alway used the directed variable like var , let , conts and assissed or declearted the value directly and donot used the function name and assissed or declearde value directly and then after that give the = sing and then give the parameter name directly and if it is one parameter then alway give directedly name and if there is many parameter name then alway give () and inside it write the many or more parameter name like (name , aa , dd) and donot give the parameter name after the function name and into inside the () and after that directed give the () and then inside the () write the code that you have to run or print or do anything and you can used the {} or objected inside the () and do not write return or var or any thing like that directed inside the () and also donot write all code or big code but you can write the short code or smaller code but the code should be small not big but you can write the objected data type in this directed methode because you can used the () and inside it you writing the code in this directed method there for you also can not used the reture , var , let , conts , in inside the () but you can used the {} objected or used:"aditya" inside (); and after that write document.write(); and inside it write the function print statement like welcome(); but only inside the document.write(); 
+
+// let welcom = name => {"aditya"};
+
+// welcom();
+
+
+// // iv)new way to write the function it callde arrow function or fat arrow or fat arrow function and in arrow function or fat function alway used the directed variable like var , let , conts and assissed or declearted the value directly and donot used the function name and assissed or declearde value directly and then after that give the = sing and then give the parameter name directly and if it is one parameter then alway give directedly name and if there is many or more parameter name then alway give () and inside it write the many or more parameter name like ( name , aa, adi) and donot give the parameter name after the function name and into inside the () if it is one single parameter name only give parameter name inside the () if it is many or more parameter name and after that directed give the {} and then inside the {} write the code that you have to run or print or do anything and you can used the {} or objected inside the {} and you can write the return or var or any thing like that directed inside the {} and also you can write all code or big code in inside the {} and also you can write the short code or smaller code inside {} but the code should be in inside the {} and you can write the objected data type in this directed methode because you can used the {} and inside it you can writing the code in this directed method there for you also can used the reture , var , let , conts , in inside the {} but you can used the {} objected or used:"aditya" inside {}; and after that write document.write(); and inside it write the function print statement like welcome(); but only inside the document.write(); 
+
+// // input:
+
+// let welcome = (name,aditya) => {
+
+//   var a= "adiyy";
+//   console.log(a);
+//   return "wwwww"
+  
+//   }
+  
+//   document.write(welcome());
+    
+
+// // output:
+
+// adiyy
+// wwwww
+
+
+
+// // v)
+
+// function welcome(){
+
+//   return  33
+  
+//   }
+  
+//   console.log(welcome());
+
+
+
+// // vi)if you giving function name there are many type to give function name there are differeted type to write the function name but alway write the function name because whenevery you have to call or run or print or give value to parameter then alway you have to used the function name like 
+
+// // i)
+//  function ff (e ,j){
+
+// document.write(); 
+
+// }
+
+// ff();
+
+
+// // ii)
+// let aa = function(e ,j){
+
+// document.write(); 
+
+// }
+
+// aa();
+
+
+// // iii)
+// document.querySelector(".box2").addEventListener("click", function (){console.log("yyyyyyyyy")} );
+
+
+// // iv)
+// document.getElementById("aditya").onclick = function(){
+//   alert("")
+// }
+
+// // v)
+
+// // input:
+
+// const calculate = (a,b,operation) => {
+// let name  = 10
+// return operation(a,b, name);
+
+// };
+
+
+// const sundar = calculate(2,4, function(qq1,qq2, name){
+
+// return  qq1 + qq2 + name;
+
+// });
+
+// //  output  = 16;
+
+// document.write(sundar);
+
+// // output: 
+
+// //6
+
+
+
+
+
+
+
+
+
+
+
+// // <!-- clear time out  -->
+// // for loop
+// // forEach
+// // conditional operater 
+// // if else else if
+// // switch case
+// // array destructuring 
+// // object destructuring
+// // array methods
+// // object methods
+// // settimeout 
+// // setInterval
+// // async await
+// // promises
+
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // 1)
+// // let arr = arr.map((value, index, array)=>{
+// // console.log(value, index, array)
+// // return value + index
+// // })
+
+
+// // i)data add
+// // ii)function
+// // iii)return
+// // iv)heigher order function
+// // v)modifiy
+
+// // 2)
+
+
+
+
+// // let adi =() => ({uuu:"aaa"});
+// // document.write(adi());
+
+
+
+
+// // var array = ["a" , "b" , "c" ,"d"];
+
+// // for(let i=0; i<array.lenght; i++){
+
+// // var output = array[array.lenght];
+// // console.log(output);
+
+// // }
+
+
+// // for (let i=0; i<=10; i++){
+
+// // const element =i;
+// // console.log(element);
+
+// // }
+
+// // for (let index = 1; index <=20; index++){
+
+// // if(index == 5){
+
+// // console.log("Detected 5");
+
+// // }
+
+
+// // console.log("value of i is ${index}");
+
+// // }
+
+
+// // let nums = [42 , 51 , 24 ,98 , 65 , 12];
+
+// // nums.forEach((n,i,nums) => {
+// // console.log(n, i, nums);
+
+// // });
+
+
+// // // conditional statement
+
+// // let num =8 ;
+
+// // let result
+
+// // result = num%2===0 ? "even" : "odd"
+
+// // console.log(result);
+
+// // // if statement
+
+// // var per = 55;
+
+// // if(per > 80){
+
+// // document.write("aditya");    
+
+// // }
+
+
+
+
+// // if(per > 80){
+
+// // document.write("aditya");    
+
+// // }else {
+// //     document.write("adi");    
+// // }
+
+
+
+
+// // if(per < 80){
+
+// // document.write("aditya");    
+
+// // }else{
+// //     document.write("adi");    
+// // }
+
+
+
+
+
+
+// // if(per < 80){
+
+// // document.write("aditya");    
+
+// // }else if (per < 80){
+// //     document.write("adi");    
+// // }
+
+
+
+
+
+
+
+
+
+
+
+
+// // 27) array methode in array methode alway used key or index 
+
+// // 1)
+
+// // i)
+
+// // input :
+
+// // var num =[1, 3 , 4 , 6 , 9 , 0];
+
+// // document.write(num[2]);
+
+// // output :
+
+// // 4
+
+
+// // ii)
+
+// // input :
+
+// // var num =[1, 3 , 4 , 6 , 9 , 0];
+
+// // document.write(num[0]);
+
+// // output :
+
+// // 1
+
+
+// // iii)
+
+// // input :
+
+// // var num =[1, 3 , 4 , 6 , 9 , 0];
+
+// // document.write(num[-2]);
+
+// // output :
+
+// // 9
+
+
+
+// // iv)
+
+// // input :
+
+// // var num =[1, 3 , 4 , 6 , 9 , 0];
+
+// // document.write(num[-3]);
+
+// // output :
+
+// // 6
+
+// // v)
+
+// // input :
+
+// // var num =[1, 3 , 4 , 6 , 9 , 0];
+
+// // document.write(num[-6]);
+
+// // output :
+
+// // 1
+
+
+// // vi)
+
+// // input :
+
+// // var num =[1, 3 , 4 , 6 , 9 , 0];
+
+// // document.write(num[-1]);
+
+// // output :
+
+// // 0
+
+
+
+// // vii)
+
+// // input :
+
+// // var num =[1, 3 , 4 , 6 , 9 , 0];
+
+// // document.write(num[-1 ,-3,-2]);
+
+// // output :
+
+// // 0 6 9 
+
+// // viii)
+
+// // input :
+
+// // var num =[1, 3 , 4 , 6 , 9 , 0];
+
+// // document.write(num[0 , 3 ,4]);
+
+// // output :
+
+// // 1 6 9
+
+
+// // ix)
+
+// // input :
+
+// // var num =[1, 3 , 4 , 6 , 9 , 0];
+
+// // document.write(num[-1 , "<br/>",-3 , "<br/>"  ,-2]);
+
+// // output :
+
+// // 0 
+// // 6
+// // 9
+
+// // viii)
+
+// // input :
+
+// // var num =[1, 3 , 4 , 6 , 9 , 0];
+
+// // document.write(num[0 , "<br/>" ,  3 ,  "<br/>",4]);
+
+// // output :
+
+// // 1 
+// // 6
+// // 9
+
+
+
+// // 2) three type to created or write the array like
+
+// // i)directed method to created array
+
+// // array =["aditya" , 2222, "dddfd"];
+
+// // document.write(array);
+
+// // ii)new Array methode to created the array
+
+// // var arry = new Array("adsd",222,"eeee" ,444);
+
+// // document.write(arry);
+
+
+// // iii)Array.from methode to created the array
+
+// // var a="mmm" , "aaa" , 3333;
+// // var b=Array.from(a);
+// // document.write(b);
+
+
+// // 3)Multidimensional array methode 
+
+// // var a=[
+
+// // ["aditya" ,33, "auchar" , 77],
+// // ["iiiiii" ,34, "rrrrr" ,  37],
+// // [" wwwww" ,73, "ooooor" , 47],
+// // ["auchar" ,31, "sundar" , 78]
+
+// // ];
+
+// // 4)array methode and alway used index or key in array methode 
+
+// // 1) 1 array methode modify or modify Array element and it is used to add the new value or element in to array from out side 
+
+
+// // i)
+// // var a=["aditya", "sundar" , "auchar" , 2222];
+// // a[0]="fuck";
+// // a[1]=3333;
+// // a[2]="adit";
+// // a[3]="pain";
+// // document.write(a);
+
+// // ii)
+// // var a=["aditya", "sundar" , "auchar" , 2222];
+// // a[0]="fuck";
+// // a[1]=3333;
+// // a[2]="adit";
+// // a[3]="pain";
+// // a[4]="fuck";
+// // document.write(a);
+
+// // iii)
+// // var a=["aditya", "sundar" , "auchar" , 2222];
+// // a[0]="fuck";
+// // a[1]=3333;
+// // a[2]="adit";
+// // a[3]="pain";
+// // a[4]="fuck";
+// // a[5]="rock";
+// // document.write(a);
+
+// // iv)
+// // var a=["aditya", "sundar" , "auchar" , 2222];
+// // a[1]="game";
+// // document.write(a);
+
+// // v)
+// // var a=["aditya", "sundar" , "auchar" , 2222];
+// // a[3]="frist";
+// // document.write(a);
+
+// // vii)
+// // var a=["aditya", "sundar" , "auchar" , 2222];
+// // a[4]="fuck";
+// // document.write(a);
+
+// // viii)
+// // var a=["aditya", "sundar" , "auchar" , 2222];
+// // a[5]="pain";
+// // document.write(a);
+
+
+
+// // 2) 2 array methode delete or delete Array element and it is used to delete or remove or cut the value or element from the array 
+
+
+// // i)
+// // var a=["aditya", "sundar" , "auchar" , 2222];
+// // delete a[0];
+// // delete a[1];
+// // delete a[2];
+// // delete a[3];
+// // document.write(a);
+
+// // ii)
+// // var a=["aditya", "sundar" , "auchar" , 2222];
+// // delete a [0];
+// // delete a [1];
+// // delete a [2];
+// // delete a [3];
+// // delete a [4];
+// // document.write(a);
+
+// // iii)
+// // var a=["aditya", "sundar" , "auchar" , 2222];
+// // delete a[0];
+// // delete a[1];
+// // delete a[2];
+// // delete a[3];
+// // delete a[4];
+// // delete a[5];
+// // document.write(a);
+
+// // iv)
+// // var a=["aditya", "sundar" , "auchar" , 2222];
+// // delete a[1];
+// // document.write(a);
+
+// // v)
+// // var a=["aditya", "sundar" , "auchar" , 2222];
+// // delete a[3];
+// // document.write(a);
+
+// // vii)
+// // var a=["aditya", "sundar" , "auchar" , 2222];
+// // delete a[4];
+// // document.write(a);
+
+// // viii)
+// // var a=["aditya", "sundar" , "auchar" , 2222];
+// // delete a[5];
+// // document.write(a);
+
+// // 3) 3 array methode sort or sort array element and it is used to arranged or assinging or put in line or in order to any value or any thing or element or word or number or alpha bate in increating number order or in number order or in a,b,c,d order or in alpha bate order but it alway take number frist 
+
+// // i)
+
+// // input :
+
+// // var a=["aditya", "sundar" , "auchar" , 2222];
+// // a.sort();
+// // document.write(a);
+
+// // output: 
+
+// // 2222 , aditya , auchar  sundar 
+
+// // ii)
+
+// // input :
+
+// // var a=["aditya", "sundar" , 11111 , 2222];
+// // a.sort();
+// // document.write(a);
+
+// // output: 
+
+// // 1111 ,2222 , aditya , sundar 
+
+
+// // iii)
+
+// // input :
+
+// // var a=["cditya", "aundar" , "buchar" , dddd];
+// // a.sort();
+// // document.write(a);
+
+// // output: 
+
+// //  aundar , buchar , cditya , dddd 
+
+// // iv)
+
+// // input :
+
+// // var a=[ 2222, 1111, 4444 , 3333];
+// // a.sort();
+// // document.write(a);
+
+// // output: 
+
+// // 1111 , 2222 , 3333 , 4444 
+
+
+// // 4) 4 array methode reverse or reverse array element and it is used to reverse or turn or opposite to any thing or element or word or number  
+
+// // i)
+
+// // input :
+
+// // var a=["aditya", "sundar" , "auchar" , 2222];
+// // a.reverse();
+// // document.write(a);
+
+// // output: 
+
+// // 2222 , auchar ,  sundar , aditya
+
+// // ii)
+
+// // input :
+
+// // var a=["aditya", "sundar" , 11111 , 2222];
+// // a.reverse();
+// // document.write(a);
+
+// // output: 
+
+// //  2222 , 1111 , sundar , aditya
+
+
+// // iii)
+
+// // input :
+
+// // var a=["cditya", "aundar" , "buchar" , dddd];
+// // a.reverse();
+// // document.write(a);
+
+// // output: 
+
+// //  dddd , buchar , aundar , cditya
+
+// // iv)
+
+// // input :
+
+// // var a=[ 2222, 1111, 4444 , 3333];
+// // a.reverse();
+// // document.write(a);
+
+// // output: 
+
+// // 3333 , 4444 , 1111 , 2222
+
+
+// // 5) 5 array methode pop or pop array element and it is used to remove or cut or delete any thing or element or word or number but it can only used to remove or cut or delete the last element or word or number or any thing only and it can not , used to remove or cut or delete the frist and middle and left and rigth and up and down element or word or number or any thing like that
+
+
+// // i)
+
+// // input :
+
+// // var a=["aditya", "sundar" , "auchar" , 2222];
+// // a.pop();
+// // document.write(a);
+
+// // output: 
+
+// // aditya, sundar , auchar 
+
+// // ii)
+
+// // input :
+
+// // var a=["aditya", "sundar" , 11111 , 2222];
+// // a.pop();
+// // document.write(a);
+
+// // output: 
+
+// //  aditya , sundar , 1111
+
+
+// // iii)
+
+// // input :
+
+// // var a=["cditya", "aundar" , "buchar" , dddd];
+// // a.pop();
+// // document.write(a);
+
+// // output: 
+
+// //  cditya , aundar , buchar
+
+// // iv)
+
+// // input :
+
+// // var a=[ 2222, 1111, 4444 , 3333];
+// // a.pop();
+// // document.write(a);
+
+// // output: 
+
+// // 2222, 1111 , 4444 
+
+
+// // 6) 6 array methode push or push array element and it is used to add or put any thing or element or word or number in last but it can only used to write or put or keep or give or add in the last only and it can not used to add or put the word or element or anything in the frist and middle and left and rigth and up and down like that
+
+// // i)
+
+// // input :
+
+// // var a=["aditya", "sundar" , "auchar"];
+// // a.push(2222);
+// // document.write(a);
+
+// // output: 
+
+// // aditya, sundar , auchar , 2222
+
+// // ii)
+
+// // input :
+
+// // var a=["aditya", "sundar" , 11111 ];
+// // a.push("atya");
+// // document.write(a);
+
+// // output: 
+
+// //  aditya , sundar , 1111 ,atya
+
+
+// // iii)
+
+// // input :
+
+// // var a=["cditya", "aundar" , "buchar";
+// // a.push("hhhh");
+// // document.write(a);
+
+// // output: 
+
+// //  cditya , aundar , buchar , hhhh
+
+// // iv)
+
+// // input :
+
+// // var a=[ 2222, 1111, 4444 ];
+// // a.push("eeee");
+// // document.write(a);
+
+// // output: 
+
+// // 2222, 1111 , 4444 ,eeee
+
+// // 7) 7 array methode unshift or unshift array element and it is used to remove or cut or delete any thing or element or word or number but it can only used to remove or cut or delete the frist element or word or number or any thing only and it can not , used to remove or cut or delete the last and middle and left and rigth and up and down element or word or number or any thing like that
+
+
+// // i)
+
+// // input :
+
+// // var a=["aditya", "sundar" , "auchar" , 2222];
+// // a.unshift();
+// // document.write(a);
+
+// // output: 
+
+// //  sundar , auchar ,2222
+
+// // ii)
+
+// // input :
+
+// // var a=["aditya", "sundar" , 11111 , 2222];
+// // a.unshift();
+// // document.write(a);
+
+// // output: 
+
+// //   sundar , 1111 ,2222
+
+
+// // iii)
+
+// // input :
+
+// // var a=["cditya", "aundar" , "buchar" , dddd];
+// // a.unshift();
+// // document.write(a);
+
+// // output: 
+
+// //  aundar , buchar ,dddd
+
+// // iv)
+
+// // input :
+
+// // var a=[ 2222, 1111, 4444 , 3333];
+// // a.unshift();
+// // document.write(a);
+
+// // output: 
+
+// //  1111 , 4444 , 3333
+
+
+
+// // 8) 8 array methode shift or shift array element and it is used to add or put any thing or element or word or number in frist but it can only used to write or put or keep or give or add in the frist only and it can not used to add or put the word or element or anything in the last and middle and left and rigth and up and down like that
+
+// // i)
+
+// // input :
+
+// // var a=["aditya", "sundar" , "auchar"];
+// // a.shift(2222);
+// // document.write(a);
+
+// // output: 
+
+// //  2222 ,aditya, sundar , auchar 
+
+// // ii)
+
+// // input :
+
+// // var a=["aditya", "sundar" , 11111 ];
+// // a.shift("atya");
+// // document.write(a);
+
+// // output: 
+
+// // atya ,aditya , sundar , 1111 
+
+
+// // iii)
+
+// // input :
+
+// // var a=["cditya", "aundar" , "buchar";
+// // a.shift("hhhh");
+// // document.write(a);
+
+// // output: 
+
+// // hhhh ,cditya , aundar , buchar 
+
+// // iv)
+
+// // input :
+
+// // var a=[ 2222, 1111, 4444 ];
+// // a.shift("eeee");
+// // document.write(a);
+
+// // output: 
+
+// // eeee ,2222, 1111 , 4444 
+
+
+// // 9) 9 array methode concat or concat array element and it is used to merged or conneted many array at once at a time like  
+
+// // i)
+// // var a=["aditya" , 2222 , 444,"aditya"];
+
+// // var b=a.concat("adity",4444,"sundar",3333);
+
+// // document.write(b);
+
+
+
+// // ii)
+// // var a=["add" ,444 , "rrr"];
+
+// // var b=a.concat("adityaa" , 444 , 666);
+
+// // document.write(b);
+
+
+
+// // iii)
+// // var a=["adity" , 333 , 444];
+
+// // var b=[3333 , "eeee" , 444];
+
+// // var c=a.concat(b);
+
+// // document.write(c);
+
+
+// // iv)
+// // var a=["aditya" , 666 , "iii"];
+
+// // var b=["hhh" , 6666 , 9999];
+
+// // var c=["hhhhh" , 8888 , 0000, 555];
+
+// // var d=a.console(b,c);
+
+// // document.write(d);
+
+
+// // v)
+// // var a=["aditya" , 666 , "iii"];
+
+// // var b=["hhh" , 6666 , 9999];
+
+// // var c=["hhhhh" , 8888 , 0000, 555];
+
+// // var d=a.console(b,c , "ttt",555,4+4,5+"k","<br/>", ${});
+
+// // document.write(d);
+
+
+// // 10) 10 array methode join or join array element and it is used to join the one array element or word or any thing to another or to each othere in center of every each sepreated array element or it is used to add any thing in to center of element or any thing or array element or in center like 
+
+
+// // i)
+// // var a=["aditya",3333,"sundar",3333];
+
+// // a.join("<br/>");
+
+// // document.write(a);
+
+// // ii)
+// // var a=["adity", 444 , "sundar" , 222];
+
+// // var b=a.join("<br/>");
+
+// // document.write(b);
+
+// // iii)
+// // var a=["aditya",3333,"sundar",3333];
+
+// // a.join(-);
+
+// // document.write(a);
+
+// // iv)
+// // var a=["adity", 444 , "sundar" , 222];
+
+// // var b=a.join(7);
+
+// // document.write(b);
+
+// // v)
+// // var a=["aditya",3333,"sundar",3333];
+
+// // a.join("a");
+
+// // document.write(a);
+
+// // vi)
+// // var a=["adity", 444 , "sundar" , 222];
+
+// // var b=a.join(d,3,"a","3",3+4,);
+
+// // document.write(b);
+
+
+
+
+ </script>
+
+
+ </body>
+
+ </html>
+
