@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+*{ 
+    font-family: "Poppins", sans-serif;
+    margin: 0; padding: 0;
+    outline:none; border: none;
+    text-transform:capitalize;
+    transition: all .2s ease-out; 
+    text-decoration: none;
+    }
+
+
+
+html{
+font-size: 62.5%;
+overflow-x: hidden;
+scroll-padding-top: 7rem;
+scroll-behavior: smooth;
+}
+
+
+
+#grad1 {
+  height: 20rem;
+  background-color: red; 
+  background-image: linear-gradient(to right, red , yellow);
+}
+
+.container {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    height: 60rem;
+}
+
+.content {
+    padding: 20px;
+    
+}
+
+h1{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+
+}
+
+
+input[type="text"] {
+    width: 310px;  
+    height: 40px;  
+    padding:0px 0px 0px 10px; 
+    font-size: 15px; 
+    border-radius: 5px; 
+}
+
+
+.btn{
+    background-color: black;
+    color: white;
+    text-align: center; 
+    width: 10rem;
+    height: 4rem;    
+    border-radius: 5px;
+}
+
+ .todoLists{
+
+    
+    margin: 1rem 1rem 1rem 1rem;
+    font-size:170%;
+    font-family:'Courier New', Courier, monospace;
+
+} 
+
+ li{
+padding: 1rem 0rem 1rem 1rem;
+margin:2rem 17rem -2rem 1rem;
+} 
+
+
+</style>
+
+</head>
+
+
+<body  id="grad1">
+
+    <div class="container">
+        <div class="content">
+    <h1> todo list</h1>
+    <form>
+<div>
+    <input type="text" value="" class="todoValue"  placeholder="Add here..."/>
+    <button class="btn">Add</button>
+</div>
+<div class="todoLists">
+     <ol type="1">
+        
+    </ol> 
+
+</div>
+    </form>
+</div>
+</div>
+<script>
+
+    const todoLists = document.querySelector(".todoLists");
+    const listValue = document.querySelector(".todoValue");
+    let todoListValue = [];
+
+    const getTodoListFromLS = () => {
+        return JSON.parse(localStorage.getItem("todoYoutube")) || [];
+    }
+
+
+
+
+
+const addTodoListLocalStorage = (todo) => {
+
+    return localStorage.setItem("todoYoutube" , JSON.stringify(todo));
+}
+
+const showTodoList = () =>{
+
+todoListValue = getTodoListFromLS();
+todoListValue.forEach((curTodo) => {
+const liElement = document.createElement("li");
+liElement.innerHTML = curTodo;
+todoLists.append(liElement);
+
+})
+}
+
+const removeTodoList = (e) => {
+console.log(e.target.textContent);
+let currentTodo = e.target;
+console.log(todoListValue);
+
+let = updatedTodoList = todoListValue.filter(
+(curTodoValue) => curTodoValue != currentTodo.textContent
+);
+
+addTodoListLocalStorage(updatedTodoList);
+currentTodo.remove();
+
+
+console.log(updatedTodoList);
+
+}
+
+
+
+
+const addTodoList = (e) => {
+    e.preventDefault();
+todoListValue = getTodoListFromLS();
+let newTodo = listValue.value.trim();
+console.log(newTodo);
+
+
+listValue.value = "";
+
+
+if(newTodo.length !== 0 && !todoListValue.includes(newTodo)){
+todoListValue.push(newTodo);
+
+
+
+    addTodoListLocalStorage(todoListValue);
+
+    // console.log("hello js");
+    const liElement = document.createElement("li");
+    liElement.innerHTML = newTodo;
+    todoLists.append(liElement);
+
+}
+
+}
+
+showTodoList();
+
+    document.querySelector(".btn").addEventListener("click" , (e) => {addTodoList(e);});
+
+
+todoLists.addEventListener('click', (e) => removeTodoList(e));
+
+</script>
+
+</body>
+</html>

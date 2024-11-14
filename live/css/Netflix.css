@@ -10,7 +10,7 @@ background-color: black;
 
  .main{
 height:80vh;
-background-image:linear-gradient(to right, rgba(5, 5, 5, 0.788) , rgba(134, 134, 119, 0.377),rgba(5, 5, 5, 0.589)),url("../../images/qq.jpg");  
+background-image:linear-gradient(to right, rgba(5, 5, 5, 0.788) , rgba(134, 134, 119, 0.377),rgba(5, 5, 5, 0.589)),url("../../../images/qq.jpg");  
 position: relative;
 background-position: center center;
 background-repeat: no-repeat;
@@ -92,8 +92,9 @@ color: black;
     z-index:20;
     background-color:red;
     position: absolute;
-    right:-100px;
+    right:-92px;
     cursor: pointer;
+    
 
 }
 
